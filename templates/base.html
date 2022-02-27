@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cars</title>
+</head>
+<body bgcolor="red">
+     {% block content %}
+<div>
+      <center>
+      <form action="add" method='post'>
+          Enter 1st num : <input type ="text" name="num1"><br>
+          Enter 2nd num : <input type ="text" name="num2"><br>
+          <input type="submit">
+
+
+      </form>
+      </center>      {% endblock %}
+<h1> Good is good</h1>
+<div>
+      <center>
+      <form action="add" method='post'>
+
+           {% csrf_token %}
+
+          Enter 1st num : <input type ="text" name="num1"><br>
+          Enter 2nd num : <input type ="text" name="num2"><br>
+          <input type="submit">
+
+
+      </form>
+      </center>
+  </div>
+</body>
+</html>
